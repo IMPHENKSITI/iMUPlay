@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Allow cleartext traffic for local development -->
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain> <!-- Android Emulator alias to host localhost -->
+        <domain includeSubdomains="true">192.168.1.0</domain> <!-- Update this to match your actual LAN IP subnet -->
+    </domain-config>
+</network-security-config>
